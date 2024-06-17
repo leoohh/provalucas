@@ -2,18 +2,18 @@ import javax.swing.JOptionPane;
 
 public class Escola {
     public static void main(String[] args) {
-        // Criando objetos Aluno e Professor
+     
         Aluno aluno1 = new Aluno("João", 15, "9A");
         Aluno aluno2 = new Aluno("Maria", 16, "9B");
         Professor professor1 = new Professor("Carlos", "Matemática");
 
-        // Construindo a mensagem com as informações
+       
         String mensagem = "Lista de Alunos e Professores:\n\n" +
                            "Aluno 1: " + aluno1.getNome() + ", Idade: " + aluno1.getIdade() + ", Turma: " + aluno1.getTurma() + "\n" +
                            "Aluno 2: " + aluno2.getNome() + ", Idade: " + aluno2.getIdade() + ", Turma: " + aluno2.getTurma() + "\n" +
                            "Professor 1: " + professor1.getNome() + ", Disciplina: " + professor1.getDisciplina();
 
-        // Exibindo a mensagem usando JOptionPane
+        
         JOptionPane.showMessageDialog(null, mensagem, "Gestão Escolar", JOptionPane.INFORMATION_MESSAGE);
     }
 }
